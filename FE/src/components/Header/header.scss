@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" );
+
+
+body, html {
+  width: 100%;
+  height: 100%; // Đặt chiều cao của body và html là 100% để .container có thể chiếm toàn bộ chiều cao của màn hình
+  margin: 0; // Xóa margin mặc định của body và html
+  padding: 0; // Xóa padding mặc định của body và html
+  font-family: 'Inter', sans-serif;
+}
+
+.header-container {
+  height: 100px;
+  width: 100vw; 
+
+}
+
+.header-line {
+ 
+  width: 100%; // Chiều rộng của đường line là bằng với .header-container
+  height: 2px; // Chiều cao của đường line
+  background-color: #ccc; // Màu nền của đường line
+  border: none; // Xóa viền của đường line
+
+}
+.container {
+  height: 100px;
+  width: 100vw; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed; // Cố định phần tử
+  top: 0; // Đặt vị trí từ đỉnh màn hình
+  left: 0; // Đặt vị trí từ bên trái màn hình
+}
+.logo {
+  width: 121px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 25px;
+}
+.b2{
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: grey; 
+  border-radius: 25px;
+}
+
+.header-button {
+   background-color: transparent;
+   border: none;
+   margin-left:20px;
+
+   &:hover {
+     color:#00f; // Change color on hover
+   }
+}

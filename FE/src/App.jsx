@@ -11,6 +11,8 @@ import CollageToolPage from './components/CollegeToolPage/collegetoolPage';
 import Header from './components/Header/Header'
 import Uni from './components/CollegeToolPage/Uni';
 import Major from './components/CollegeToolPage/Major';
+import RegistrationForm from './components/RegistrationForm/RegistrationForm';
+import Home from './components/HomePage/Home';
 function App() {
 
 
@@ -32,9 +34,14 @@ function App() {
         <Route path="/communication" element={<CommunicationPage />} />
         </Routes>
         <Routes>
-        <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
         </Routes>
-      
+        <Routes>
+        <Route path="/regis" element={<RegistrationForm />} />
+        </Routes>
+        <Routes>
+        <Route path="/home" element={<Home />} />
+        </Routes>
       </Router>
         
     </div>

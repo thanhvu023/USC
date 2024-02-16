@@ -141,3 +141,28 @@ export const colourOptions = [
     }
   ]
   
+  export const geographicalLocationOptions = [
+    { value: 'USA', label: 'USA' },
+    { value: 'England', label: 'England' },
+    { value: 'Other', label: 'Other' },
+  ];
+
+ export const stateOptions = [
+    { value: 'California', label: 'California' },
+    { value: 'New York', label: 'New York' },
+  ];
+
+  export const rankingOptions = [
+    { value: '1', label: '#1' },
+    { value: '2', label: '#2' },
+  ];
+
+  export const financialsOptions = [
+    { value: 'Tuition Fee', label: 'Tuition Fee' },
+    { value: 'Scholarship', label: 'Scholarship' },
+  ];
+
+ export const academicProgramOptions = [
+    { value: 'Computer Science', label: 'Computer Science' },
+    { value: 'Engineering', label: 'Engineering' },
+  ];

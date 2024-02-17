@@ -1,0 +1,92 @@
+// AboutUs.scss
+.about-us {
+    text-align: center;
+    padding: 50px;
+  
+    h2 {
+      margin-bottom: 30px;
+      font-size: 60px;
+    }
+  
+    .team-members {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+  
+    .member {
+        background: #fff; // White background for the card
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adds shadow for depth
+        border-radius: 10px; // Rounded corners for the card
+        padding: 20px; // Inside space for the card
+        margin: 20px; // Space between the cards
+        transition: all 0.3s ease; // Smooth transition for hover effect
+        &:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); // Larger shadow on hover
+            transform: translateY(-5px); // Slight lift effect on hover
+          }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%; 
+        margin-bottom: 15px;
+      }
+  
+      h3 {
+        margin-bottom: 5px;
+        color: #333;
+      }
+  
+      p {
+        margin-bottom: 10px;
+        color: #555;
+        font-size: 0.9rem;
+      }
+  
+      
+.social-icons {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+  
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px; 
+      height: 36px; 
+      border-radius: 50%; 
+      background-color: #f0f0f0; 
+      color: #333; 
+      transition: all 0.3s ease; 
+      &:hover {
+        background-color: #e0e0e0;
+        color: #000; 
+        transform: scale(1.1); 
+      }
+  
+      .svg-inline--fa {
+        width: 20px; 
+        height: 20px;
+      }
+    }
+  }
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .member {
+      width: 100%; 
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+  }
+  

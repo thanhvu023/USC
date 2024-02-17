@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { schoolsData } from '../../data/data';
 const SchoolBox = ({ schoolName, publicLocation, mainMajor, unitType, ranking, establishDate, avatarURL }) => {
     return (
@@ -26,20 +26,44 @@ const SchoolBox = ({ schoolName, publicLocation, mainMajor, unitType, ranking, e
   };
   
   const Uni = () => {
+    const itemsPerPage = 8;
+    const [currentPage, setCurrentPage] = useState(1);
+  
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = schoolsData.slice(indexOfFirstItem, indexOfLastItem);
+  
+    const totalPages = Math.ceil(schoolsData.length / itemsPerPage);
+  
+    const handleNextPage = () => {
+      setCurrentPage(prevPage => prevPage + 1);
+    };
+  
+    const handlePrevPage = () => {
+      setCurrentPage(prevPage => prevPage - 1);
+    };
     return (
-      <div className='school-grid'>
-        {schoolsData.map((school, index) => (
-          <SchoolBox
-            key={index}
-            schoolName={school.schoolName}
-            publicLocation={school.publicLocation}
-            mainMajor={school.mainMajor}
-            unitType={school.unitType}
-            ranking={school.ranking}
-            establishDate={school.establishDate}
-            avatarURL={school.avatarURL}
-          />
-        ))}
+      <div>
+        <div className='school-grid'>
+          {currentItems.map((school, index) => (
+            <SchoolBox
+              key={index}
+              schoolName={school.schoolName}
+              publicLocation={school.publicLocation}
+              mainMajor={school.mainMajor}
+              unitType={school.unitType}
+              ranking={school.ranking}
+              establishDate={school.establishDate}
+              avatarURL={school.avatarURL}
+            />
+          ))}
+        </div>
+  
+        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+          <button onClick={handlePrevPage} disabled={currentPage === 1}>Previous</button>
+          <span style={{ margin: '0 10px' }}>Page {currentPage} of {totalPages}</span>
+          <button onClick={handleNextPage} disabled={currentPage === totalPages}>Next</button>
+        </div>
       </div>
     );
   };

@@ -4,7 +4,7 @@ import { colourOptions } from '../../data/data';
 import './schoolView.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
+import { geographicalLocationOptions,stateOptions,financialsOptions,rankingOptions,academicProgramOptions  } from '../../data/data';
 import Uni from './Uni';
 import Major from './Major';
 import Header from '../Header/Header';
@@ -57,95 +57,78 @@ const CollageToolPage = () => {
   const [isDisabled, setIsDisabled] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isRtl, setIsRtl] = useState(false);
-  
+  const [selectedGeographicalLocation, setSelectedGeographicalLocation] = useState(null);
+  const [selectedState, setSelectedState] = useState([]);
+  const [selectedRanking, setSelectedRanking] = useState([]);
+  const [selectedFinancials, setSelectedFinancials] = useState([]);
+  const [selectedAcademicProgram, setSelectedAcademicProgram] = useState([]);
 const [main, setMain] = useState("Uni");
+
+    // handle filer
+const handleGeographicalLocationChange = selectedOption => {
+  setSelectedGeographicalLocation(selectedOption);
+};
+const handleStateChange = selectedOptions => setSelectedState(selectedOptions);
+const handleRankingChange = selectedOptions => setSelectedRanking(selectedOptions);
+const handleFinancialsChange = selectedOptions => setSelectedFinancials(selectedOptions);
+const handleAcademicProgramChange = selectedOptions => setSelectedAcademicProgram(selectedOptions);
+
+
   return (
     <div className="gcontainer">
       
-    <div className="school-view-container"
-
-    >
-        
+      <div className="school-view-container">
+        <h2>Collage Search</h2>
       <Select
-        className="basic-single"
+        className="basic-multi-select"
         classNamePrefix="select"
-        defaultValue={colourOptions[0]}
-        isDisabled={isDisabled}
-        isLoading={isLoading}
-        isClearable={isClearable}
-        isRtl={isRtl}
-        isSearchable={isSearchable}
-        name="color"
-        options={colourOptions}
-
-        
+        value={selectedGeographicalLocation}
+        onChange={handleGeographicalLocationChange}
+        options={geographicalLocationOptions}
+        isMulti
+        placeholder="Select geographical location(s)"
       />
-      
+
       <Select
-        className="basic-single"
+        className="basic-multi-select"
         classNamePrefix="select"
-        defaultValue={colourOptions[0]}
-        isDisabled={isDisabled}
-        isLoading={isLoading}
-        isClearable={isClearable}
-        isRtl={isRtl}
-        isSearchable={isSearchable}
-        name="color"
-        options={colourOptions}
+        value={selectedState}
+        onChange={handleStateChange}
+        options={stateOptions}
+        isMulti
+        placeholder="Select state(s)"
       />
-        <Select
-        className="basic-single"
-        classNamePrefix="select"
-        defaultValue={colourOptions[0]}
-        isDisabled={isDisabled}
-        isLoading={isLoading}
-        isClearable={isClearable}
-        isRtl={isRtl}
-        isSearchable={isSearchable}
-        name="color"
-        options={colourOptions}
-      />
-        <Select
-        className="basic-single"
-        classNamePrefix="select"
-        defaultValue={colourOptions[0]}
-        isDisabled={isDisabled}
-        isLoading={isLoading}
-        isClearable={isClearable}
-        isRtl={isRtl}
-        isSearchable={isSearchable}
-        name="color"
-        options={colourOptions}
-      />
-        <Select
-        className="basic-single"
-        classNamePrefix="select"
-        defaultValue={colourOptions[0]}
-        isDisabled={isDisabled}
-        isLoading={isLoading}
-        isClearable={isClearable}
-        isRtl={isRtl}
-        isSearchable={isSearchable}
-        name="color"
-        options={colourOptions}
-      />
-      
-      <div
-        style={{
-          color: 'hsl(0, 0%, 40%)',
-          display: 'inline-block',
-          fontSize: 12,
-          fontStyle: 'italic',
-          marginTop: '1em',
-       
-        
-        }}
-      >
-     
 
-  
-      </div>
-      </div>
+      <Select
+        className="basic-multi-select"
+        classNamePrefix="select"
+        value={selectedRanking}
+        onChange={handleRankingChange}
+        options={rankingOptions}
+        isMulti
+        placeholder="Select ranking(s)"
+      />
+
+      <Select
+        className="basic-multi-select"
+        classNamePrefix="select"
+        value={selectedFinancials}
+        onChange={handleFinancialsChange}
+        options={financialsOptions}
+        isMulti
+        placeholder="Select financial(s)"
+      />
+
+      <Select
+        className="basic-multi-select"
+        classNamePrefix="select"
+        value={selectedAcademicProgram}
+        onChange={handleAcademicProgramChange}
+        options={academicProgramOptions}
+        isMulti
+        placeholder="Select academic program(s)"
+      />
+    </div>
       <div className='school-content'>
       <SearchBar/>
 <HeaderFilter

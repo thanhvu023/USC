@@ -1,0 +1,229 @@
+// home.scss
+.main-container{
+    display: flex;
+  flex-direction: column; // Stack the children vertically
+  align-items: center; // Center children horizontally
+  justify-content: start; // Align children to the start of the main axis
+  gap: 20px; // Add some space between the children
+  padding: 20px; // Add some padding around the entire container
+  max-width: 1200px; // Set a max-width for the container
+  margin: 0 auto; // Center the container on the page
+}
+
+.education-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 50px;
+    background: #fff;
+  
+    
+    .content {
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      width: 100%; 
+      gap: 30px;
+    }
+  
+    .text-block {
+      flex: 1; 
+      max-width: 50%; 
+  
+      h2 {
+        margin-bottom: 20px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      p {
+        margin-bottom: 40px;
+        color: #555;
+      }
+    }
+  
+    .image-block {
+      flex: 1;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+  
+      img {
+        width: auto; 
+        max-height: 100%; 
+        max-width: 100%; 
+      }
+    }
+    .features {
+        display: flex;
+        justify-content: center; // Centers the feature items container
+        gap: 30px; // Adds equal space between the feature items
+      }
+      
+      .feature-item {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        width: 220px;
+      }
+      
+      .feature-icon {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 10px; 
+      }
+      
+      .feature-content {
+        min-height: 100px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+      }
+  
+   
+  }
+  
+  .about-us {
+    text-align: center;
+    padding: 50px;
+  
+    h2 {
+      margin-bottom: 30px;
+      font-size: 60px;
+    }
+  
+    .team-members {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+  
+    .member {
+        background: #fff; // White background for the card
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adds shadow for depth
+        border-radius: 10px; // Rounded corners for the card
+        padding: 20px; // Inside space for the card
+        margin: 20px; // Space between the cards
+        transition: all 0.3s ease; // Smooth transition for hover effect
+        &:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); // Larger shadow on hover
+            transform: translateY(-5px); // Slight lift effect on hover
+          }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%; 
+        margin-bottom: 15px;
+      }
+  
+      h3 {
+        margin-bottom: 5px;
+        color: #333;
+      }
+  
+      p {
+        margin-bottom: 10px;
+        color: #555;
+        font-size: 0.9rem;
+      }
+  
+      
+.social-icons {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+  
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px; 
+      height: 36px; 
+      border-radius: 50%; 
+      background-color: #f0f0f0; 
+      color: #333; 
+      transition: all 0.3s ease; 
+      &:hover {
+        background-color: #e0e0e0;
+        color: #000; 
+        transform: scale(1.1); 
+      }
+  
+      .svg-inline--fa {
+        width: 20px; 
+        height: 20px;
+      }
+    }
+  }
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .member {
+      width: 100%; 
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+  }
+  /// major page
+  .group-major {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+
+  }
+  
+  .box {
+    position: relative;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .box img {
+       filter: brightness(20%) contrast(20%); 
+
+    }
+    &:hover .overlay {
+      opacity: 1;
+    }
+  
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  

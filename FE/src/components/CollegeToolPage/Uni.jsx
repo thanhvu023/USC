@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { schoolsData } from '../../data/data';
 const SchoolBox = ({ schoolName, publicLocation, mainMajor, unitType, ranking, establishDate, avatarURL }) => {
     return (
-      <div className="school-box" style={{ border: '1px solid #ccc', padding: '20px', margin: '10px', width: '500px' }}>
+      <div className="school-box" style={{ border: '1px solid #ccc', padding: '20px', margin: '10px',}}>
      <div className="school-image" style={{ marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
   <img src={avatarURL} alt={schoolName} style={{ borderRadius: '50%', width: '100px', height: '100px', marginRight: '20px' }} />
   <div>

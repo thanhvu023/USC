@@ -2,16 +2,72 @@ import React from 'react';
 import './home.scss';
 import lady2 from '../../assets/lady2.jpg'
 import { faTwitter, faLinkedinIn, faTumblr } from '@fortawesome/free-brands-svg-icons';
-
+import Box from './Box'
 import laydy from '../../assets/lady.jpg'; // Make sure the path is correct
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward, faBookOpen, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
+import { groupsMajor } from '../../data/data';
 
 const Home = () => {
     return (
         <div className='main-container'>
-   
-   <div className="about-us">
+    <section className="education-section">
+          <div className="content">
+            <div className="text-block">
+              <h2>Created For Education Business</h2>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+              <div className="features">
+              <div className="feature-item">
+              <div className="feature-icon">
+                <FontAwesomeIcon icon={faAward} size='3x' />
+              </div>
+              <div className="feature-content">
+              <h3>Internationally Recognised</h3>
+              <p>Certificates that are recognized globally.</p>
+              </div>
+            </div>
+            <div className="feature-item">
+              <div className="feature-icon">
+                <FontAwesomeIcon icon={faBookOpen} size='3x' />
+              </div>
+              <div className="feature-content">
+              <h3>Innovative Syllabus</h3>
+              <p>Curriculum designed to meet industry standards.</p>
+              </div>
+            </div>
+            <div className="feature-item">
+              <div className="feature-icon">
+                <FontAwesomeIcon icon={faUserGraduate} size='3x' />
+              </div>
+              <div className="feature-content">
+              <h3>Guaranteed Career</h3>
+              <p>Graduate with a job-ready skillset.</p>
+              </div>
+            </div>
+              </div>
+            </div>
+            <div className="image-block">
+              <img src={laydy} alt="Person pointing" />
+            </div>
+          </div>
+        </section>
+   <div className='majors'>
+   <h1>Group Majors</h1>
+    <h3>Information about specific majors and outstanding training schools - helping you save time searching for majors of interest</h3>
+    <div className='group-major'>
+     
+       {groupsMajor.map(group => (
+          <Box
+            key={group.id}
+            groupName={group.name}
+            imageUrl={group.imageUrl}
+          />
+        ))}
+    </div>
+     </div>
+    <div className="about-us">
       <h2>Our Professional Team</h2>
       <div className="team-members">
         <div className="member">
@@ -88,48 +144,6 @@ const Home = () => {
     </div>        </div>
       </div>
     </div>
-        <section className="education-section">
-          <div className="content">
-            <div className="text-block">
-              <h2>Created For Education Business</h2>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-              <div className="features">
-              <div className="feature-item">
-              <div className="feature-icon">
-                <FontAwesomeIcon icon={faAward} size='3x' />
-              </div>
-              <div className="feature-content">
-              <h3>Internationally Recognised</h3>
-              <p>Certificates that are recognized globally.</p>
-              </div>
-            </div>
-            <div className="feature-item">
-              <div className="feature-icon">
-                <FontAwesomeIcon icon={faBookOpen} size='3x' />
-              </div>
-              <div className="feature-content">
-              <h3>Innovative Syllabus</h3>
-              <p>Curriculum designed to meet industry standards.</p>
-              </div>
-            </div>
-            <div className="feature-item">
-              <div className="feature-icon">
-                <FontAwesomeIcon icon={faUserGraduate} size='3x' />
-              </div>
-              <div className="feature-content">
-              <h3>Guaranteed Career</h3>
-              <p>Graduate with a job-ready skillset.</p>
-              </div>
-            </div>
-              </div>
-            </div>
-            <div className="image-block">
-              <img src={laydy} alt="Person pointing" />
-            </div>
-          </div>
-        </section>
         </div>
       );
 }

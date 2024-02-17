@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" );
 
-
+:root {
+  --main-color: black;
+  --secondary-color: #6c757d;
+  /* Định nghĩa thêm các biến khác */
+}
 body, html {
   width: 100%;
   height: 100%; // Đặt chiều cao của body và html là 100% để .container có thể chiếm toàn bộ chiều cao của màn hình
@@ -10,6 +14,8 @@ body, html {
 }
 
 .header-container {
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   height: 100px;
   width: 100vw; 
 
@@ -29,12 +35,11 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: fixed; // Cố định phần tử
-  top: 0; // Đặt vị trí từ đỉnh màn hình
-  left: 0; // Đặt vị trí từ bên trái màn hình
+  
 }
+
 .logo {
-  width: 121px;
+  width: 100%;
   height: 10px;
   background-color: grey;
   border-radius: 25px;
@@ -47,20 +52,25 @@ body, html {
   width: 50px;
   height: 50px;
   background-color: grey; 
+  background-position: center;
+  background-size: cover;
   border-radius: 25px;
 }
 
 .header-button {
-   background-color: transparent;
-   border: none;
-   margin-left:20px;
+  padding: 10px 20px; /* Tăng kích thước và khoảng cách */
+  cursor: pointer; /* Biểu tượng chuột thay đổi */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
 
    &:hover {
-     color:#00f; // Change color on hover
+    background-color: #e0e0e0;  // Change color on hover
+   }
+   a{
+    color: black;
    }
 }
 dropdown-content {
-  display: none; // Initially hide the dropdown content
+  display: none; 
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -68,6 +78,13 @@ dropdown-content {
   z-index: 1;
 }
 
-.header-button:hover .dropdown-content {
-  display: block; // Show dropdown content on hover
+
+@media (max-width: 768px) {
+  .header-container, .container {
+    flex-direction: column; /* Chuyển sang chế độ cột cho di động */
+  }
+
+  .b2, .logo, .avatar, .header-button {
+    margin: 10px 0; /* Khoảng cách cho di động */
+  }
 }

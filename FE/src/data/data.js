@@ -1,3 +1,5 @@
+
+
 export const colourOptions = [
     { value: 'red', label: 'Red' },
     { value: 'orange', label: 'Orange' },
@@ -166,3 +168,107 @@ export const colourOptions = [
     { value: 'Computer Science', label: 'Computer Science' },
     { value: 'Engineering', label: 'Engineering' },
   ];
+
+
+
+  export const groupsMajor= [
+    {
+      id: 1,
+      name: "Ngành Khoa học Máy tính",
+      code: "CNTT",
+      imageUrl: "https://i.pinimg.com/564x/57/d7/45/57d745474a39ccc097deb6813aa9d362.jpg"
+    },
+    {
+      id: 2,
+      name: "Ngành Y học",
+      code: "YH",
+      imageUrl: "https://i.pinimg.com/564x/8d/43/6c/8d436c68bb8cef65af21a4348b290c22.jpg"
+
+    },
+    {
+      id: 3,
+      name: "Quản Trị Kinh Doanh",
+      code: "KT",
+      imageUrl: "https://i.pinimg.com/564x/b4/9d/8f/b49d8f540e3c45b9d15deaec0f5b3211.jpg"
+    },
+    {
+      id: 4,
+      name: "Luật Sư",
+      code: "LS",
+      imageUrl: "https://i.pinimg.com/564x/0e/bf/48/0ebf4886dc4a39a83d72319d45c658e2.jpg"
+    },
+    {
+      id: 5,
+      name: "Truyền Thông",
+      code: "ME",
+      imageUrl: "https://i.pinimg.com/564x/46/13/c4/4613c4fb5857fe851f849b9c390ec175.jpg"
+    },
+    {
+      id: 6,
+      name: "Ngành Khoa học Máy tính2",
+      code: "CNTT",
+      imageUrl: "https://i.pinimg.com/564x/57/d7/45/57d745474a39ccc097deb6813aa9d362.jpg"
+    },
+    {
+      id: 7,
+      name: "Ngành Y học2",
+      code: "YH",
+      imageUrl: "https://i.pinimg.com/564x/8d/43/6c/8d436c68bb8cef65af21a4348b290c22.jpg"
+
+    },
+    {
+      id:8,
+      name: "Quản Trị Kinh Doanh2",
+      code: "KT",
+      imageUrl: "https://i.pinimg.com/564x/b4/9d/8f/b49d8f540e3c45b9d15deaec0f5b3211.jpg"
+    },
+    {
+      id: 9,
+      name: "Luật Sư2",
+      code: "LS",
+      imageUrl: "https://i.pinimg.com/564x/0e/bf/48/0ebf4886dc4a39a83d72319d45c658e2.jpg"
+    },
+    {
+      id: 10,
+      name: "Truyền Thông2",
+      code: "ME",
+      imageUrl: "https://i.pinimg.com/564x/46/13/c4/4613c4fb5857fe851f849b9c390ec175.jpg"
+    },
+    {
+      id: 11,
+      name: "Ngành Khoa học Máy tính23",
+      code: "CNTT",
+      imageUrl: "https://i.pinimg.com/564x/57/d7/45/57d745474a39ccc097deb6813aa9d362.jpg"
+    },
+    {
+      id: 12,
+      name: "Ngành Y học3",
+      code: "YH",
+      imageUrl: "https://i.pinimg.com/564x/8d/43/6c/8d436c68bb8cef65af21a4348b290c22.jpg"
+
+    },
+    {
+      id: 13,
+      name: "Quản Trị Kinh Doanh3",
+      code: "KT",
+      imageUrl: "https://i.pinimg.com/564x/b4/9d/8f/b49d8f540e3c45b9d15deaec0f5b3211.jpg"
+    },
+    {
+      id: 14,
+      name: "Luật Sư3",
+      code: "LS",
+      imageUrl: "https://i.pinimg.com/564x/0e/bf/48/0ebf4886dc4a39a83d72319d45c658e2.jpg"
+    },
+    {
+      id: 15,
+      name: "Truyền Thông3",
+      code: "ME",
+      imageUrl: "https://i.pinimg.com/564x/46/13/c4/4613c4fb5857fe851f849b9c390ec175.jpg"
+    },
+    {
+      id: 16,
+      name: "Truyền Thông4",
+      code: "ME",
+      imageUrl: "https://i.pinimg.com/564x/46/13/c4/4613c4fb5857fe851f849b9c390ec175.jpg"
+    },
+];

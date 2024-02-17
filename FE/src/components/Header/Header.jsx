@@ -24,16 +24,16 @@ const collageToolRef = useRef(null);
     <div className='header-container'>
       <div className='container'>
         <div className='b1'>
-          <div className='logo'>
-            
-          </div>
+         
+          <Link to="/home" className='logo'/>
+        
         </div>
         <div className='b2'  >
           <div ref={homeRef}>
           <button className="header-button"
-        onClick={() => scrollToSection(homeRef)}
+      
          >
-         <Link to="/home" >Honme</Link>
+         <Link to="/scholarship-finder" >ScholarshipFinderPage</Link>
          </button>
           </div>
         <div ref={collageToolRef}>
@@ -58,7 +58,6 @@ const collageToolRef = useRef(null);
           <div className="avatar"></div>
         </div>
       </div>
-      <hr className="header-line" />
     </div>
   );
 }

@@ -1,97 +1,78 @@
 import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
 import './regisCss.scss'
 const RegistrationForm = () => {
-    const { register, handleSubmit } = useForm();
-    const [submitted, setSubmitted] = useState(false);
-  
-    const onSubmit = (data) => {
-      console.log('Form submitted:', data);
-      setSubmitted(true);
-    };
-  
-    return (
-      <div className="registration-form-container">
-        <h2>Đăng ký du học</h2>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="form-group">
-            <label htmlFor="fullName">Họ tên</label>
-            <input
-              type="text"
-              id="fullName"
-              {...register('fullName')}
-              className="form-control"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="dateOfBirth">Ngày sinh</label>
-            <input
-              type="text"
-              id="dateOfBirth"
-              {...register('dateOfBirth')}
-              className="form-control"
-            />
-          </div>
-          <div className="form-group">
-            <label>Giới tính</label>
-            <div className="radio-group">
-              <input
-                type="radio"
-                id="male"
-                value="Nam"
-                {...register('gender')}
-                className="form-control"
-              />
-              <label htmlFor="male">Nam</label>
-              <input
-                type="radio"
-                id="female"
-                value="Nữ"
-                {...register('gender')}
-                className="form-control"
-              />
-              <label htmlFor="female">Nữ</label>
-              <input
-                type="radio"
-                id="other"
-                value="Khác"
-                {...register('gender')}
-                className="form-control"
-              />
-              <label htmlFor="other">Khác</label>
-            </div>
-          </div>
-          <div className="form-group">
-            <label htmlFor="phoneNumber">Điện thoại</label>
-            <input
-              type="text"
-              id="phoneNumber"
-              {...register('phoneNumber')}
-              className="form-control"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              {...register('email')}
-              className="form-control"
-            />
-          </div>
-          <div className="form-group">
-            <label>Lý do bạn muốn du học</label>
-            <textarea
-              id="reasonForStudyingAbroad"
-              {...register('reasonForStudyingAbroad')}
-              className="form-control"
-            />
-          </div>
-          <button type="submit" className="btn-submit">Đăng ký</button>
-        </form>
-        {submitted && <p className="success-message">Đăng ký thành công!</p>}
+  return (
+    <div className="flex flex-col items-stretch pb-12 bg-white">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/1480facb74018e5f1f2711496ca1ddb958d25b22ced4e9eb740138f7e49468c0?apiKey=cb385fe764144f1da1450678a6b41140"
+        alt="Registration Banner"
+        className="registration-banner"
+      />
+      <div className="registration-heading">
+        Đăng ký tư vấn
       </div>
-    );
+      <div className="registration-form">
+        <div className="personal-info">
+          <input
+            type="text"
+            placeholder="Họ và Tên"
+            className="input-field"
+          />
+          <div className="flex gap-5 justify-between items-stretch mt-10">
+            <input
+              type="text"
+              placeholder="Giới tính"
+              className="input-field"
+            />
+            <input
+              type="text"
+              placeholder="Ngày sinh"
+              className="input-field"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Địa chỉ"
+            className="input-field"
+          />
+          <div className="flex gap-5 justify-between items-stretch mt-10">
+            <input
+              type="text"
+              placeholder="Phường"
+              className="input-field"
+            />
+            <input
+              type="text"
+              placeholder="Quận"
+              className="input-field"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Số Điện Thoại"
+            className="input-field"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            className="input-field"
+          />
+          <button className="submit-button">
+            Tiếp tục
+          </button>
+        </div>
+        <div className="registration-illustration">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2d1f9a2f-b3f5-48a6-b84b-bdb98cc99abf?apiKey=cb385fe764144f1da1450678a6b41140"
+            alt="Registration Illustration"
+            className="illustration"
+          />
+        </div>
+      </div>
+    </div>
+  );
   };
   
   export default RegistrationForm;

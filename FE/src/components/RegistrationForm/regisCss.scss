@@ -1,45 +1,89 @@
-.registration-form-container {
-    max-width: 800px;
-    height: 100%;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+/* regisCss.scss */
 
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .radio-group {
-    display: flex;
-    align-items: center;
-  }
-  
-  .btn-submit {
-    background-color: #4d79ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .success-message {
-    color: green;
-    margin-top: 10px;
-  }
-  
+/* Container for the entire registration form */
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-bottom: 12px;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+/* Banner image at the top */
+.registration-banner {
+  width: 100%;
+  height: auto;
+  /* Add any additional styling you need for the banner */
+}
+
+/* Heading for the registration form */
+.registration-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark gray text color */
+}
+
+/* Main registration form section */
+.registration-form {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Personal information section */
+.personal-info {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Error message for invalid input */
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Illustration section */
+.registration-illustration {
+  flex: 1;
+  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/2d1f9a2f-b3f5-48a6-b84b-bdb98cc99abf?apiKey=cb385fe764144f1da1450678a6b41140');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Image within the illustration section */
+.illustration {
+  width: 100%;
+  height: auto;
+  /* Add any additional styling you need for the illustration image */
+}

@@ -71,4 +71,96 @@ position: fixed;
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
   }
-  
+  .major-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.major-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+ 
+
+  .school-details {
+    .school-image {
+     
+
+      img {
+     
+        width: 100%;
+        height: 100px;
+      }
+
+      div {
+        h3 {
+          margin: 0;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        p {
+          margin: 5px 0;
+          font-size: 1rem;
+          color: #555;
+        }
+      }
+    }
+
+    .major-details {
+      display: flex;
+  flex-direction: column; 
+  .sub-details-row {
+    display: flex;
+    
+    justify-content: space-around; 
+    margin-bottom: 10px; 
+  }
+      .sub-details {
+        text-align: center;
+        align-items: center;
+        border: 1px solid #ccc; 
+        border-radius: 30px;
+        background-color: #f9f9f9;
+
+        p {
+       
+          margin:  0;
+          font-size: 1rem;
+          color: #555;
+        }
+
+        p:last-child {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+      }
+      
+     
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4d79ff;
+  }
+
+  button {
+    background-color: #4d79ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    
+  }
+}

@@ -1,6 +1,9 @@
-import React from 'react';
-
-export default function ScholarshipFinderPage() {
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
+import KT from '../../../assets/major/luatsu.jpg'
+import './UniDetail.scss'
+const UniDetail = () => {
   const { universityId } = useParams();
   console.log(universityId);
   const [university, setUniversity] = useState();
@@ -78,4 +81,6 @@ export default function ScholarshipFinderPage() {
     </>
    
   )
-}
+};
+
+export default UniDetail;

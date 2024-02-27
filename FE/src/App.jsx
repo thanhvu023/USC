@@ -13,6 +13,8 @@ import Uni from './components/CollegeToolPage/Uni';
 import Major from './components/CollegeToolPage/Major';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import Home from './components/HomePage/Home';
+import UniDetail from './components/CollegeToolPage/UniDetail/UniDetail';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className='App'>
@@ -27,7 +29,10 @@ function App() {
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/regis" element={<RegistrationForm />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/universities/:universityId" element={<UniDetail />} />
+          {/* <Route path="/university-detail" element={<UniDetail />} /> */}
         </Routes>
+        <Footer/>
       </Router>
     </div>
   )

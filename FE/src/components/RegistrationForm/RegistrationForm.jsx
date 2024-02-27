@@ -19,12 +19,11 @@ const RegistrationForm = () => {
             placeholder="Họ và Tên"
             className="input-field"
           />
-          <div className="flex gap-5 justify-between items-stretch mt-10">
-            <input
-              type="text"
-              placeholder="Giới tính"
-              className="input-field"
-            />
+          <div className="flex gap-5  items-stretch mt-10">
+          <label>Giới tính</label>
+            <input type="radio" name="gender" value="Nam" onChange={e => setGender(e.target.value)} /> Nam
+            <input type="radio" name="gender" value="Nữ" onChange={e => setGender(e.target.value)} /> Nữ
+            <input type="radio" name="gender" value="Khác" onChange={e => setGender(e.target.value)} /> Khác
             <input
               type="text"
               placeholder="Ngày sinh"

@@ -35,23 +35,24 @@ position: fixed;
     flex-direction: column; 
     padding: 20px; 
 }
-.basic-single{
-position: fixed;
+.basic-single {
+  position: fixed;
 }
 .gcontainer {
-   width: 100%;
-   height: 100%;
-   display: grid;
-   grid-template-columns: 3fr 7fr;
-  }
-  form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-  
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.personal-info {
   input[type="text"] {
     padding: 0.5rem;
     border-radius: 0.25rem;
@@ -63,27 +64,30 @@ position: fixed;
     height: 20px;
     margin-right: 0.5rem;
   }
-  
-  button[type="submit"] {
+}
+
+.submit-search{
+  button {
     padding: 0.5rem;
-    background-color: #19AE54;
-;
+    background-color: #19ae54;
     color: #fff;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
   }
-  .filter-button{
-    border: none;
-    background-color: transparent;
-    padding: 8px 16px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    width: 500px;
-  }
+}
+
+.filter-button {
+  border: none;
+  background-color: transparent;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  width: 500px;
+}
 
   .filter-button.selected:after {
     content: "";

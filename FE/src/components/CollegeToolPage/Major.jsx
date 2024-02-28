@@ -3,7 +3,16 @@ import { schoolsData } from '../../data/data';
 import { FaDollarSign, FaClock, FaUserCheck } from 'react-icons/fa'; // Import các icon từ thư viện React Icons
 import './schoolView.scss';
 
-const MajorBox = ({ schoolName, mainMajor, duration, tuitionFee, eligibility, publicLocation, avatarURL, majorCode }) => {
+const MajorBox = ({
+  schoolName,
+  mainMajor,
+  duration,
+  tuitionFee,
+  eligibility,
+  publicLocation,
+  avatarURL,
+  majorCode,
+}) => {
   return (
     <div className="major-box">
       <div className="school-details">
@@ -21,11 +30,21 @@ const MajorBox = ({ schoolName, mainMajor, duration, tuitionFee, eligibility, pu
         <div className="major-details">
         <div className="sub-details-row">
           <div className='sub-details'>
-          <p><span class="icon-background"><FaDollarSign /></span> Tuition Fee: {tuitionFee}</p>
+            <p><FaDollarSign /> Tuition Fee: {tuitionFee}</p>
           </div>
           <div className='sub-details'>
-            <p><span class="icon-background"><FaUserCheck /></span> Eligibility: {eligibility}</p>
+            <p><FaClock /> Duration: {duration}</p>
+            
+          </div>
+          </div>
+          <div className="sub-details-row">
+          <div className='sub-details'>
+            <p><FaUserCheck /> Eligibility: {eligibility}</p>
      
+          </div>
+          <div className='sub-details'>
+            <p><FaClock /> Duration: {duration}</p>
+          
           </div>
           </div>
           <div className="sub-details-row">
@@ -59,11 +78,11 @@ export default function Major() {
   const totalPages = Math.ceil(schoolsData.length / itemsPerPage);
 
   const handleNextPage = () => {
-    setCurrentPage(prevPage => prevPage + 1);
+    setCurrentPage((prevPage) => prevPage + 1);
   };
 
   const handlePrevPage = () => {
-    setCurrentPage(prevPage => prevPage - 1);
+    setCurrentPage((prevPage) => prevPage - 1);
   };
 
   return (

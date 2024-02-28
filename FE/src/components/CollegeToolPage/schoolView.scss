@@ -1,10 +1,39 @@
 .school-view-container {
-  margin: auto;
-  max-width: 400px;
-  width: 90%;
-  height: 100%;
-  flex-direction: column;
-  padding: 20px;
+ 
+    margin: auto;
+    max-width: 400px;
+    width: 90%; 
+   height: 100%;
+    flex-direction: column; 
+    padding: 20px; 
+   
+}
+.school-content{
+  margin-top: 20px;
+}
+.basic-single{
+position: fixed;
+}
+.gcontainer {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 3fr 7fr;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+  }.school-view-container {
+ 
+    margin: auto;
+    max-width: 400px;
+    width: 90%; 
+   height: 100%;
+    flex-direction: column; 
+    padding: 20px; 
 }
 .basic-single {
   position: fixed;
@@ -92,6 +121,13 @@ form {
  
 
   .school-details {
+
+    .more-info{
+      h3{
+        font-size: 24px;
+    
+      }
+    }
     .school-image {
      
 
@@ -118,9 +154,10 @@ form {
 
     .major-details {
       display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
+  justify-content: space-around;
   .sub-details-row {
-    display: flex;
+flex-direction: column;
     
     justify-content: space-around; 
     margin-bottom: 10px; 
@@ -131,7 +168,8 @@ form {
         border: 1px solid #ccc; 
         border-radius: 30px;
         background-color: #f9f9f9;
-
+        margin: 10px;
+        padding: 5px;
         p {
        
           margin:  0;
@@ -142,7 +180,17 @@ form {
         p:last-child {
           font-weight: bold;
           margin-bottom: 5px;
+          margin-top: 5px;
+
         }
+        .icon-background {
+          background-color: white; /* Màu nền xám nhẹ */
+          border-radius: 30px; /* Tạo viền tròn */
+          padding: 6.5px 6.5px 5px 5px;
+          margin-top: 20px;
+
+        }
+        
       }
       
      
@@ -167,3 +215,54 @@ form {
     
   }
 }
+
+  
+  input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 60%;
+    margin-right: 0.5rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5rem;
+    background-color: #19AE54;
+;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  .filter-button{
+    border: none;
+    background-color: transparent;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    width: 500px;
+  }
+
+  .filter-button.selected:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #19AE54;
+  }
+  .school-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+  }
+  .school-box {
+   width: auto;
+  }

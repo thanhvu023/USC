@@ -23,6 +23,8 @@ import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 import Profile from "./components/Profile/Profile";
 import EditProfile from "./components/Profile/EditProfie";
 import ChangePassword from "./components/Profile/ChangePassword";
+import UniDetail from "./components/CollegeToolPage/UniDetail/UniDetail";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -47,7 +49,10 @@ function App() {
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/regis" element={<RegistrationForm />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/universities/:universityId" element={<UniDetail />} />
+          {/* <Route path="/university-detail" element={<UniDetail />} /> */}
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

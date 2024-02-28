@@ -21,7 +21,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "CS101"
     },
     {
@@ -34,7 +34,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "ENG202"
     },
     {
@@ -47,7 +47,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "ENG301"
     },
     {
@@ -60,7 +60,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "SCI401"
     },
     {
@@ -73,7 +73,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "VAR501"
     },
     {
@@ -86,7 +86,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "VAR601"
     },
     {
@@ -99,7 +99,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "VAR701"
     },
     {
@@ -112,7 +112,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "VAR801"
     },
     {
@@ -125,7 +125,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "VAR901"
     },
     {
@@ -138,7 +138,7 @@ export const colourOptions = [
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
       tuitionFee: "$48,000 ",
-      eligibility: "High school",
+      eligibility: "High",
       majorCode: "VAR1001"
     }
   ]

@@ -18,8 +18,12 @@ const MajorBox = ({
       <div className="school-details">
         <div className="school-image">
           <img src={avatarURL} alt={schoolName} />
+          <div className="more-info">
+          <h3 style={{fontSize:'24px'}}>{majorCode}-{mainMajor}</h3>
+         
+        </div>
           <div>
-            <h3>{schoolName}</h3>
+            <h3 style={{color:'black'}}>{schoolName}</h3>
             <p>{publicLocation}</p>
           </div>
         </div>
@@ -43,11 +47,21 @@ const MajorBox = ({
           
           </div>
           </div>
+          <div className="sub-details-row">
+          <div className='sub-details'>
+            <p><span class="icon-background"><FaDollarSign /></span> Eligibility: {eligibility}</p>
+     
+          </div>
+          <div className='sub-details'>
+            <p><span class="icon-background"><FaClock /></span> Duration: {duration}</p>
+            
+          </div>
+          </div>
+          
         </div>
         <div className="more-info">
-          <h3>{majorCode}-{mainMajor}</h3>
           <button>See more</button>
-        </div>
+          </div>
       </div>
     </div>
   );

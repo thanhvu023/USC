@@ -1,143 +1,154 @@
 .UniDetail {
-    position: relative;
-    .UniDetail-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%);
-      display: flex;
-      align-items: center; 
-      justify-content: center; 
-    }
-    
-    .UniDetail-text {
-      color: white;
-      font-size: 4rem; 
-      z-index: 4;
-    }
-    
-    .UniDetail-img {
-      width: 100%;
-      display: block; 
-      
-      // opacity: 0.7;
-    }
-  }
-  .Section {
+  position: relative;
+  .UniDetail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%);
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  .UniDetail-text {
+    color: white;
+    font-size: 6rem; 
+    font-weight: bold;
+    z-index: 4;
+  }
+  
+  .UniDetail-img {
+    width: 100%;
+    display: block; 
     
-    .Section-content {
-      width: 50%; // Hoặc tỉ lệ phần trăm tùy thuộc vào layout
-      // Thêm styles cho nội dung văn bản ở đây
-      h1 {
-        margin-bottom: 20px;
-      }
-      // Định nghĩa các styles cho phần tử khác
-    }
-  
-    .Section-gallery {
-      width: 45%; // Hoặc tỉ lệ phần trăm tùy thuộc vào layout
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); // 3 cột
-      grid-gap: 10px;
-      // Định nghĩa các styles cho gallery ảnh ở đây
-    }
+    // opacity: 0.7;
   }
-  .Features {
-    background: #FFD700; // Gold color background
-    padding: 20px;
+}
+.Section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
   
-    .Features-header {
-      text-align: center;
-      margin-bottom: 30px;
-  
-      h2 {
-        margin-bottom: 10px;
-        color: #333; // Dark text for title
-      }
-  
-      p {
-        color: #333; // Dark text for subtitle
-      }
+  .Section-content {
+    width: 50%; // Hoặc tỉ lệ phần trăm tùy thuộc vào layout
+    // Thêm styles cho nội dung văn bản ở đây
+    h1 {
+      margin-bottom: 20px;
+      font-size: 42px;
+      font-weight: 700;
     }
-  
-    .Features-container {
-      display: flex;
-      justify-content: space-between;
-  
-      .Feature-item {
-        background: white;
-        padding: 20px;
-        width: calc(33.333% - 20px); // Subtract margin
-        margin: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-  
-        &:hover {
-          transform: translateY(-5px);
-        }
-  
-        h3 {
-          color: #333; // Dark text for headers
-          margin-bottom: 5px;
-        }
-  
-        p {
-          color: #666; // Lighter text for body
-          font-size: 0.9rem;
-        }
-      }
-    }
+    // Định nghĩa các styles cho phần tử khác
   }
+
+  .Section-gallery {
+    width: 45%; // Hoặc tỉ lệ phần trăm tùy thuộc vào layout
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3 cột
+    grid-gap: 10px;
+    // Định nghĩa các styles cho gallery ảnh ở đây
+  }
+}
+.Features {
+  background: #FFD700; // Gold color background
+  padding: 20px;
+
+  .Features-header {
+    text-align: center;
+    margin-bottom: 30px;
+
     
 
-  .massimo-vignelli {
-    display: flex;
-    background-color: #fff; // màu nền trắng
-    color: #333; // màu chữ đậm
-    padding: 20px;
-  
-    .text-content {
-      flex-basis: 50%;
-      padding-right: 20px;
-  
-      h1 {
-        margin-bottom: 0.5em;
-      }
-  
-      blockquote {
-        font-style: italic;
-        margin-bottom: 1em;
-      }
-  
-      .register-button {
-        background-color: #DAA520; // màu vàng hoàng gia
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  
-        &:hover {
-          background-color: darken(#DAA520, 10%);
-        }
-      }
+    h2 {
+      margin-bottom: 10px;
+      color: #333; 
+      font-size: 32px;
+      font-weight: 700;
     }
-  
-    .image-content {
-      flex-basis: 50%;
-      img {
-        width: 100%;
-        height: auto;
-        display: block; // để loại bỏ khoảng cách dưới hình ảnh
+
+    p {
+      color: #333; 
+      font-size: 20px;// Dark text for subtitle
+    }
+  }
+
+  .Features-container {
+    display: flex;
+    justify-content: space-between;
+
+    .Feature-item {
+      background: white;
+      padding: 20px;
+      width: calc(33.333% - 20px); // Subtract margin
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        color: #333; // Dark text for headers
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      p {
+        color: #666; // Lighter text for body
+        font-size: 0.9rem;
       }
     }
   }
+}
   
+
+.massimo-vignelli {
+  display: flex;
+  background-color: #fff; 
+  color: #333; 
+  padding: 20px;
+
+  .text-content {
+    flex-basis: 50%;
+    padding-right: 20px;
+
+    h1 {
+      margin-bottom: 0.5em;
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin-bottom: 1em;
+    }
+
+    .register-button {
+      background-color: #DAA520; // màu vàng hoàng gia
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background-color: darken(#DAA520, 10%);
+      }
+    }
+  }
+
+  .image-content {
+    flex-basis: 50%;
+    img {
+      width: 100%;
+      height: auto;
+      display: block; // để loại bỏ khoảng cách dưới hình ảnh
+    }
+  }
+}

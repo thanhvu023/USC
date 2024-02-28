@@ -60,8 +60,13 @@ export default function Header() {
           <button className="header-button"
       
          >
-         <Link to="/university-detail" >Detail</Link>
+         <Link to="/university-detail" >Scholarship-Finder</Link>
          </button>
+         <button className="header-button"
+      
+      >
+      <Link to="/college-tool" >Collage Tool</Link>
+      </button>
           </div>
 
           <button className="header-button">

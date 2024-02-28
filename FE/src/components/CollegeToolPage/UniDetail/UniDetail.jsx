@@ -49,20 +49,20 @@ const UniDetail = () => {
 <div className="Features">
   <div className="Features-header">
     <h2>Đặc điểm nổi bật của chương trình đào tạo</h2>
-    <p>Thiết kế Đồ họa là một trong những ngành lau đời và thế mạnh của trường Đại học Văn Lang. Xuyên suốt nhiều năm qua, chúng tôi đã tạo nên cả tính cho riêng mình thông qua:</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
   </div>
   <div className="Features-container">
     <div className="Feature-item">
-      <h3>Phát triển tư duy thẩm mỹ</h3>
-      <p>Sinh viên sẽ được phát triển tư duy thẩm mỹ và khả năng sáng tạo khi được học trong môi trường hiện đại, đáp ứng đủ cơ sở vật chất cho việc thiết kế.</p>
+      <h3> Lorem Ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div className="Feature-item">
-      <h3>Thực hành triển lãm</h3>
-      <p>Ở Văn Lang, sinh viên được phát triển ý tưởng thành sản phẩm thật và được triển lãm nhiều đợt trong năm. Doanh nghiệp thường đến trường Đại học Văn Lang tham dự triển lãm đồ án sinh viên để tiếp cận ...Xem thêm</p>
+      <h3> Lorem Ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div className="Feature-item">
-      <h3>Nhiều chương trình đào tạo chuyên sâu</h3>
-      <p>Đặc biệt, trường Đại học Văn Lang tiên phong triển khai chuyên sâu chuyên đề Nghiên cứu với cơ đản từ trong đào tạo mỹ thuật ứng dụng qua các đồ án tranh khắc gỗ, in độc bản, in lụa, điêu khắc tấm hiểu ...Xem thêm</p>
+      <h3> Lorem Ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
 </div>
@@ -70,7 +70,7 @@ const UniDetail = () => {
   <div className="text-content">
     <h1>Massimo Vignelli</h1>
     <blockquote>
-      “Thiết kế là duy nhất – vì không có nhiều loại thiết kế. Những nguyên tắc thiết kế có thể dùng cho nhiều dự án khác nhau còn phong cách thì không quan trọng. Thiết kế còn đáng kể hơn bất kỳ phong cách nào."
+      “Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     </blockquote>
     <button className="register-button">Đăng ký ngay</button>
   </div>

@@ -20,13 +20,13 @@ const Footer = () => {
             <p>Email: <a href="mailto:info@web.edu.vn">info@web.edu.vn</a></p>
             <p>Đào tạo: <a href="tel:0909336376">0909336376</a></p>
           </div>
-          <div className="footer-quick-links">
+          {/* <div className="footer-quick-links">
             <Link to="/documents">Hệ thống Văn bản</Link>
             <Link to="/e-learning">Hệ thống E-Learning</Link>
             <Link to="/library">Thư viện</Link>
             <Link to="/hub">HUB</Link>
             <Link to="/e-job">E-job</Link>
-          </div>
+          </div> */}
         </div>
         <div className="footer-section">
           <div className="footer-admissions">

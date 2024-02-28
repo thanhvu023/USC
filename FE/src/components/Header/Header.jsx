@@ -33,7 +33,7 @@ const collageToolRef = useRef(null);
           <button className="header-button"
       
          >
-         <Link to="/scholarship-finder" >ScholarshipFinderPage</Link>
+         <Link to="/university-detail" >Detail</Link>
          </button>
           </div>
         <div ref={collageToolRef}>

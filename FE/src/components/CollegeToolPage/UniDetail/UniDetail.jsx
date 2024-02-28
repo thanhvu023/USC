@@ -1,6 +1,9 @@
-import React from 'react';
-
-export default function ScholarshipFinderPage() {
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
+import KT from '../../../assets/major/luatsu.jpg'
+import './UniDetail.scss'
+const UniDetail = () => {
   const { universityId } = useParams();
   console.log(universityId);
   const [university, setUniversity] = useState();
@@ -9,7 +12,7 @@ export default function ScholarshipFinderPage() {
     const fetchUniversityDetails = async () => {
       try {
         const response = await axios.get(`https://us-study-capstone-project.azurewebsites.net/universities??universityId=${universityId}`);
-        const uniDetail = response.data.find(uni => uni.universityId.toString() === universityId);
+       const uniDetail = response.data.find(uni => uni.universityId.toString() === universityId);
         setUniversity(uniDetail);
         console.log(uniDetail);
       } catch (error) {
@@ -37,7 +40,7 @@ export default function ScholarshipFinderPage() {
     <div className="Section">
   <div className="Section-content">
     <h1>Giới thiệu chung</h1>
-    <p>Ngành Thiết kế đồ họa trường Đại học Văn Lang cung cấp với 2 chương trình đào tạo tiêu chuẩn và đặc biệt. Cả 2 chương trình đều được xây dựng cấu trúc và trình tự hợp lý để trang bị cho người học đủ kiến thức, kỹ năng, kỷ luật với ngành. </p>
+    <p>{university.description} </p>
   </div>
   <div className="Section-gallery">
   <img src={KT}/>
@@ -78,4 +81,6 @@ export default function ScholarshipFinderPage() {
     </>
    
   )
-}
+};
+
+export default UniDetail;

@@ -20,8 +20,8 @@ export const colourOptions = [
       establishDate: "1636",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "CS101"
     },
     {
@@ -33,8 +33,8 @@ export const colourOptions = [
       establishDate: "1885",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "ENG202"
     },
     {
@@ -46,8 +46,8 @@ export const colourOptions = [
       establishDate: "1861",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "ENG301"
     },
     {
@@ -59,8 +59,8 @@ export const colourOptions = [
       establishDate: "1891",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "SCI401"
     },
     {
@@ -72,8 +72,8 @@ export const colourOptions = [
       establishDate: "1209",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "VAR501"
     },
     {
@@ -85,8 +85,8 @@ export const colourOptions = [
       establishDate: "1096",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "VAR601"
     },
     {
@@ -98,8 +98,8 @@ export const colourOptions = [
       establishDate: "1890",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "VAR701"
     },
     {
@@ -111,8 +111,8 @@ export const colourOptions = [
       establishDate: "1746",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "VAR801"
     },
     {
@@ -124,8 +124,8 @@ export const colourOptions = [
       establishDate: "1701",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "VAR901"
     },
     {
@@ -137,8 +137,8 @@ export const colourOptions = [
       establishDate: "1868",
       avatarURL: "https://www.gstatic.com/webp/gallery/1.jpg",
       duration: "4 years",
-      tuitionFee: "$48,000 per year",
-      eligibility: "High school diploma or equivalent",
+      tuitionFee: "$48,000 ",
+      eligibility: "High",
       majorCode: "VAR1001"
     }
   ]
